@@ -17,7 +17,9 @@ app.use('/users', authRoutes);
 app.use('/posts', postRoutes);
 app.use('/users', userRoutes);
 
-
+app.get('/', (req, res) => {
+    res.send('Homepage');
+})
 
 const PORT = process.env.PORT || 8080;
 
