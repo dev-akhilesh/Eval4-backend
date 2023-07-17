@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/users', authRoutes);
-app.use('/users', postRoutes);
+app.use('/posts', postRoutes);
 app.use('/users', userRoutes);
 
 
